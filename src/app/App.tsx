@@ -10,16 +10,27 @@ import { Footer } from './components/Footer';
 
 export default function App() {
   return (
-    <div className="bg-[#0A0A0A] text-white overflow-x-hidden">
-      <LanguageToggle />
-      <HeroSection />
-      <AboutSection />
-      <ServicesSection />
-      <PortfolioSection />
-      <InteractiveSection />
-      <MarqueeSection />
-      <CTASection />
-      <Footer />
+    <div 
+      className="min-h-screen w-full text-white overflow-x-hidden"
+      style={{
+        backgroundImage: 'url(/OIP.webp)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      <div className="bg-black/50 min-h-screen w-full">
+        <LanguageToggle />
+        <HeroSection />
+        <AboutSection />
+        <ServicesSection />
+        <PortfolioSection />
+        <InteractiveSection />
+        <MarqueeSection />
+        <CTASection />
+        <Footer />
+      </div>
     </div>
   );
 }
