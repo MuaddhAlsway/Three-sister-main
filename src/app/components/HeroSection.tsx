@@ -72,15 +72,14 @@ export function HeroSection() {
       ref={heroRef}
       className="relative h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background Layer */}
+      {/* Background Layer with Linear Gradient */}
       <div
         ref={bgLayerRef}
-        className="absolute inset-0 bg-gradient-to-br from-[#1A1A1A] via-[#0A0A0A] to-[#0A0A0A]"
+        className="absolute inset-0"
+        style={{
+          background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(254, 3, 106, 0.2) 50%, rgba(0, 0, 0, 0.4) 100%)'
+        }}
       />
-
-      {/* Accent gradients */}
-      <div className="absolute top-20 right-20 w-96 h-96 blur-3xl" style={{ background: 'radial-gradient(circle, rgba(254, 3, 106, 0.15) 0%, transparent 70%)' }} />
-      <div className="absolute bottom-20 left-20 w-96 h-96 blur-3xl" style={{ background: 'radial-gradient(circle, rgba(254, 3, 106, 0.08) 0%, transparent 70%)' }} />
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-8 text-center">
