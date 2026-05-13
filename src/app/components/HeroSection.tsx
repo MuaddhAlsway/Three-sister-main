@@ -77,7 +77,7 @@ export function HeroSection() {
         ref={bgLayerRef}
         className="absolute inset-0"
         style={{
-          background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(254, 3, 106, 0.2) 50%, rgba(0, 0, 0, 0.4) 100%)'
+          background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.6) 100%)'
         }}
       />
 
